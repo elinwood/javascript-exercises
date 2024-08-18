@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+
+    const numx = Number(prompt("What is your number?",18));
+    const textx = prompt("What's your text?","Default text")
+
+    // add7 exercise
+
+    function add7(num) {        
+      return num + 7 ;
+    }
+    let result1 = add7(numx);
+
+    // multiply exercise
+
+    function multiply(num) {
+      return num * 2
+    }
+    
+    let result2 = multiply(numx)
+    
+    // capitalize exercise
+
+    function capitalize(text) {
+        let firstletter = text.charAt(0)
+        firstletter = firstletter.toUpperCase()
+        let remainingletters = text.slice(1)        
+        let result = firstletter + remainingletters
+        return result
+    }
+    let result3 = capitalize(textx)
+
+    // last letter exercise
+    function lastletter(text) {
+        let len = text.length
+        result = text.charAt(len-1)
+        return result
+    }
+    let result4 = lastletter(textx)
+
+
+    //print
+    console.log(result1);
+    console.log(result2)
+    console.log(result3)
+    console.log(result4)
+
+
+  </script>
+</body>
+</html>
